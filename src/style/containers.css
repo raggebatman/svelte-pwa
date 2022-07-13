@@ -1,0 +1,11 @@
+
+.paper-border {
+    border: 1px solid var(--text-color);    
+    border-radius: var(--radius-1);
+    padding: var(--padding-2);
+
+}
+
+.paper {
+    padding: var(--padding-2);
+}
