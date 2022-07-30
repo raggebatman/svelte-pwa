@@ -1,28 +1,11 @@
-<script>
-	import { Router, Link, Route } from "svelte-routing";
-	import Home from "./views/Home.svelte";
-	import Software from "./views/Software.svelte";
-	import About from "./views/About.svelte";
-	import Contact from "./views/Contact.svelte";
-	import "./style/index.css"
-	export let url = "";
-</script>
-
-<Router {url}>
-	<nav class="nav">
-		<Link to="/">Home</Link>
-		<Link to="software">Software</Link>
-		<Link to="about">About</Link>
-		<Link to="contact">Contact</Link>
-	</nav>
-	<div>
-		<Route path="/" component={Home} />
-		<Route path="/software" component={Software} />
-		<Route path="/contact" component={Contact} />
-		<Route path="/about" component={About} />
-	</div>
-</Router>
-
-<style>
-
-</style>
+<main>
+	<h1>Hey,</h1>
+	<p>
+		You're seeing the Svelte + TypeScript + Vite + Sass template.
+	</p>
+	<p>
+		This is just an example app.
+		<br>
+		Feel free to modify it to your heart's content.
+	</p>
+</main>

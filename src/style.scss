@@ -1,0 +1,23 @@
+// It's just structured this way to show that Sass is working.
+
+html {
+    background-color: yellow;
+    color: black;
+
+    body {
+        margin: 0;
+
+        #app {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100vw;
+            font-size: clamp(16px, 3vw, 48px);
+
+            main {
+                margin: 0 1em;
+            }
+        }
+    }
+}
