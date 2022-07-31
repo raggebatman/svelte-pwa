@@ -1,6 +1,6 @@
 ## Template PWA for Svelte + TypeScript + Vite + Sass
 
-Derived from [this repository]((https://git.lgjt.xyz/Johannes/lgjt.xyz/src/branch/master)).
+Derived from [this repository](https://git.lgjt.xyz/Johannes/lgjt.xyz/src/branch/master).
 
 **Prerequisites**
 
