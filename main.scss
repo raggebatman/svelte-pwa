@@ -7,7 +7,7 @@ html {
     body {
         margin: 0;
 
-        #app {
+        main {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -15,7 +15,9 @@ html {
             width: 100vw;
             font-size: clamp(16px, 3vw, 48px);
 
-            main {
+            > h1, 
+            > p 
+            {
                 margin: 0 1em;
             }
         }
