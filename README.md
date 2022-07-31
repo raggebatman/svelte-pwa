@@ -1,8 +1,6 @@
-## Template for Svelte + TypeScript + Vite + Sass
+## Template PWA for Svelte + TypeScript + Vite + Sass
 
-I nabbed this off of [git.lgjt.xyz](https://git.lgjt.xyz/Johannes/lgjt.xyz/src/branch/master), so props to him for making it in the first place.
-Go take a look there to know why this is structured as it is.
-Anyhow, I adopted it and made some changes.
+Derived from [this repository]((https://git.lgjt.xyz/Johannes/lgjt.xyz/src/branch/master)).
 
 **Prerequisites**
 
@@ -23,6 +21,10 @@ Anyhow, I adopted it and made some changes.
 4. Run `npm run dev`
 
 That's it.
+
+If you want to build for production, do `npm run build` and `npm run preview` to start the preview server.
+
+Service workers (necessary for the PWA) require that you use HTTPS (unless on localhost).
 
 **Sass highlighting**
 

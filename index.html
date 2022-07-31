@@ -1,13 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Svelte + TypeScript + Vite + Sass</title>
+
+    <link rel="icon" href="favicon.ico" />
+    
+    <!-- PWA related stuff -->
+    <link rel="manifest" href="manifest.json" />
+    <meta name="description" content="A PWA template for Svelte using TypeScript, Vite, and Sass" />
+    <meta name="theme-color" content="#ffff00" />
+
+    <!-- Required for ios -->
+    <meta name="apple-mobile-web-app-status-bar" content="#ffff00" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="Svelte + TypeScript + Vite + Sass" />
+    <link rel="apple-touch-icon" href="/images/icons/icon-152x152.png">
+
+    <!-- Remove this script tag if you don't want the app to be PWA installable. -->
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@pwabuilder/pwainstall"
+    ></script>
+
+    <script 
+      type="module" 
+      src="/src/main.ts"
+      defer
+    ></script>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
+    <noscript>
+      <div>
+        <h2>This app requires JavaScript.</h2>
+        <p>Allow it to run and try again.</p>
+      </div>
+    </noscript>
+
+    <script>
+        if ("serviceWorker" in navigator) {
+          window.addEventListener("load", () => {
+            navigator.serviceWorker.register("/service-worker.js").then((reg) => {
+              console.log("[ServiceWorker] Registered.", reg);
+            });
+          });
+        }
+    </script>
   </body>
 </html>
